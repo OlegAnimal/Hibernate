@@ -4,16 +4,16 @@ import java.sql.*;
 
 public class Util {
     // реализуйте настройку соеденения с БД
-    private static final String url = "jdbc:mysql://localhost:3306/firstdb";
-    private static final String user = "root";
-    private static final String password = "rootroot";
+    private static final String URL = "jdbc:mysql://localhost:3306/firstdb";
+    private static final String USER = "root";
+    private static final String PASSWORD = "rootroot";
 
-    public Util() {
+    private Util() {
 
     }
 
-    public Connection getConnectionJDBC() throws SQLException {
-        return DriverManager.getConnection(url, user, password);
+    public static Connection getConnectionJDBC() throws SQLException {
+        return DriverManager.getConnection(URL, USER, PASSWORD);
     }
 
 }
