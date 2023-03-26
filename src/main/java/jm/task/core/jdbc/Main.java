@@ -11,7 +11,7 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        // реализуйте алгоритм здесь
+
         UserService service = new UserServiceImpl();
 
         service.createUsersTable();
@@ -25,7 +25,6 @@ public class Main {
         service.saveUser("Vera", "Nikitina", (byte) 33);
         System.out.println("User с именем – Vera добавлен в базу данных");
 
-//        service.removeUserById(1L);
         List<User> list = service.getAllUsers();
         list.forEach(System.out::println);
 
